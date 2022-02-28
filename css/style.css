@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202632;
+  color: #cee3e9;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  padding: 12rem 1.6rem;
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+h1, p {
+  margin: 0;
+}
+
+.advice {
+  background-color: #313A49;
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 4.1rem 2.3rem 6.1rem;
+  position: relative;
+  margin: auto;
+  max-width: 54rem;
+}
+@media screen and (min-width: 426px) {
+  .advice {
+    padding: 4.8rem 4.8rem 7.2rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  .advice {
+    width: 54rem;
+  }
+}
+.advice__id {
+  color: #52ffa8;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 426px) {
+  .advice__id {
+    font-size: 1.3rem;
+    margin-bottom: 2.4rem;
+  }
+}
+.advice__text {
+  font-size: 2.3rem;
+  letter-spacing: 0.2px;
+  line-height: 3.3rem;
+}
+@media screen and (min-width: 426px) {
+  .advice__text {
+    font-size: 2.8rem;
+    letter-spacing: -0.3px;
+  }
+}
+.advice__divider {
+  margin-top: 2.3rem;
+}
+.advice__divider img {
+  object-fit: cover;
+  object-position: center;
+  height: 1.6rem;
+  width: 100%;
+}
+@media screen and (min-width: 426px) {
+  .advice__divider img:first-of-type {
+    display: none;
+  }
+}
+.advice__divider img:last-of-type {
+  display: none;
+}
+@media screen and (min-width: 426px) {
+  .advice__divider img:last-of-type {
+    display: block;
+  }
+}
+.advice__btn {
+  background-color: #52ffa8;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s box-shadow;
+  height: 6.4rem;
+  width: 6.4rem;
+}
+.advice__btn:hover {
+  box-shadow: 0px 0px 30px 10px rgba(82, 255, 168, 0.3);
+}
